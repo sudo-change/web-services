@@ -21,7 +21,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/hello", helloHandler) // Update this line of code
+	http.HandleFunc("/hello", helloHandler)
 
 	fmt.Printf("Starting server at port 8080\n")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
